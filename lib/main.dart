@@ -27,7 +27,6 @@ class MyHomePage extends StatelessWidget {
       amount: 25.50,
       date: DateTime.now(),
     ),
-    
   ];
 
   @override
@@ -48,9 +47,12 @@ class MyHomePage extends StatelessWidget {
               elevation: 5,
             ),
           ),
-          Card(
-            color: Colors.red,
-            child: Text('LIST OF TX'),
+          Column(
+            children: transactions.map((tx) {
+              return Card(
+                child: Text(tx.title),
+              );
+            }).toList(),
           ),
         ],
       ),
