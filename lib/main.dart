@@ -51,7 +51,6 @@ class MyHomePage extends StatelessWidget {
             children: transactions.map((tx) {
               return Card(
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Container(
                       margin: EdgeInsets.symmetric(
@@ -75,6 +74,7 @@ class MyHomePage extends StatelessWidget {
                       ),
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
                           tx.title,
@@ -83,7 +83,10 @@ class MyHomePage extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        Text(tx.date.toString(), style: TextStyle(color: Colors.grey),),
+                        Text(
+                          tx.date.toString(),
+                          style: TextStyle(color: Colors.grey),
+                        ),
                       ],
                     ),
                   ],
