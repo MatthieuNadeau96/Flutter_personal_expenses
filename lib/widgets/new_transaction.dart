@@ -56,7 +56,7 @@ class _NewTransactionState extends State<NewTransaction> {
             ),
             RaisedButton(
               child: Text('Submit'),
-              color: Colors.purple,
+              color: Theme.of(context).primaryColor,
               onPressed: submitData,
             ),
           ],
