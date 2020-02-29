@@ -2,7 +2,7 @@
 
 A flutter application 
 
-(https://cdn.iconscout.com/icon/free/png-256/flutter-2038877-1720090.png)
+![alt text](https://cdn.iconscout.com/icon/free/png-256/flutter-2038877-1720090.png "Flutter Icon")
 
 ## What I learned
 
