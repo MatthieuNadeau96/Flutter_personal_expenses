@@ -1,6 +1,8 @@
 # Personal Expenses
 
-A flutter application
+A flutter application 
+
+(https://cdn.iconscout.com/icon/free/png-256/flutter-2038877-1720090.png)
 
 ## What I learned
 
