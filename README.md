@@ -1,16 +1,28 @@
-# personal_expenses
+# Personal Expenses
 
-A new Flutter project.
+A flutter application
 
-## Getting Started
+## What I learned
 
-This project is a starting point for a Flutter application.
+### Flutter Fundamentals
 
-A few resources to get you started if this is your first Flutter project:
+- How to compose UI from build-in and custom Widgets
+- That custom Widgets are also composed from build-in and other custom Widgets
+- How to style and configure via arguments
+- How to use the docs & IDE support
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Styling & Configuring Widgets
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- That styling & layout options are very different: EdgeInsets.all(), BoxDecoration(), enums, ... => Docs and IDE support help
+- Often, there's more than one Widget or option to get the job done
+
+### Theming
+
+- How to define a global theme for colors and text to then tap into it from anywhere in the app via Theme.of(context)
+- Build-in Widgets use Theme settings automatically
+
+### Business Logic
+
+- Lift state up and use stateful widgets only when needed
+- Pass functions and references and data around
+- How to adjust the UI to my logic
