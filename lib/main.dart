@@ -125,7 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final mediaQuery = MediaQuery.of(context);
     final isLandscape = mediaQuery.orientation == Orientation.landscape;
-    final PreferredSizeWidget appBar = Platform.isIOS
+    final PreferredSizeWidget appBar = Platform.isAndroid
         ? CupertinoNavigationBar(
             middle: Text(
               'Personal Expenses',
@@ -168,8 +168,8 @@ class _MyHomePageState extends State<MyHomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text('Show Chart'),
-                  Switch.adaptive(
+                  Text('Show Chart', style: Theme.of(context).textTheme.title),
+                  CupertinoSwitch(
                     activeColor: Theme.of(context).accentColor,
                     value: _showChart,
                     onChanged: (val) {
@@ -203,7 +203,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
     );
-    return Platform.isIOS
+    return Platform.isAndroid
         ? CupertinoPageScaffold(
             child: pageBody,
             navigationBar: appBar,
@@ -213,7 +213,7 @@ class _MyHomePageState extends State<MyHomePage> {
             body: pageBody,
             floatingActionButtonLocation:
                 FloatingActionButtonLocation.centerFloat,
-            floatingActionButton: Platform.isIOS
+            floatingActionButton: Platform.isAndroid
                 ? Container()
                 : FloatingActionButton(
                     child: Icon(Icons.add),
